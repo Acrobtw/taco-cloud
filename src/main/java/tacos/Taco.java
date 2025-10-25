@@ -1,12 +1,17 @@
 package tacos;
 
-
 import java.util.List;
 import lombok.Data;
-
 
 @Data
 public class Taco {
     private String name;
-    private List<Ingredients> ingredients;
+    private List<String> ingredients;
+
+    // геттеры и сеттеры
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+
+    public List<String> getIngredients() { return ingredients; }
+    public void setIngredients(List<String> ingredients) { this.ingredients = ingredients; }
 }
