@@ -8,7 +8,7 @@ public class Taco {
     private String name;
     private List<String> ingredients;
 
-    // геттеры и сеттеры
+    
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
 
