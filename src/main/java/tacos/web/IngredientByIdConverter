@@ -1,0 +1,19 @@
+package tacos.web;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.core.convert.converter.Converter;
+import org.springframework.stereotype.Component;
+
+
+@Component
+public class IngredientByIdConverter implements Converter<String, Ingredient> {
+    private Map<String, Ingredient> ingredientsMap = new HashMap<>();
+
+    public IngredientByIdConverter() {
+        ingredientsMap.put("FLTO",
+        new Ingredients("FLTO", "Flour Tortilla", Type.WRAP));
+    }
+
+}
